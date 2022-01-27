@@ -20,7 +20,7 @@ const app = {
                 // 取出回傳的token及expired
                 const {token,expired} = res.data;
                 // 存入cookie
-                document.cookie = `haxToken=${token};expires=${new Date(expired)};path=/`;
+                document.cookie = `hexToken=${token};expires=${new Date(expired)};path=/`;
                 // 轉到新頁面
                 window.location = 'index.html';
             })
